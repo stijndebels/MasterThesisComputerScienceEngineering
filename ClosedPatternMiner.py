@@ -13,7 +13,7 @@ class ClosedPatternMiner(PatternMiner):
         super().__init__(Trans,freq,nrI,nrT,TDB,Items)
        # self.m = Model()
     def find_closed_patterns(self):
-        self.find_frequent_patterns()
+        #self.find_frequent_patterns()
         for i in range (self.nrI):
             som2 = 0
             for t in range(self.nrT):

@@ -19,7 +19,7 @@ class PatternMiner:
     def find_covered_patterns(self):
         for t in range(self.nrT):
             som = 0
-            for i in range (self.nrI):
+            for i in range(self.nrI):
                 som +=(1-self.TDB[t][i])*self.Items[i]
             self.m += (self.Trans[t] == (som<= 0))
     def find_frequent_patterns(self):
